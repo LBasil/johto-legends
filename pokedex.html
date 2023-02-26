@@ -12,73 +12,119 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      
+
         <div id="navbarBasicExample" class="navbar-menu">
-          <div class="navbar-start">
-            <a class="navbar-item" href="index.html">
-              Home
-            </a>
-      
-            <a class="navbar-item">
-              Documentation
-            </a>
-      
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link">
-                More
-              </a>
-      
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="pokedex.html">
-                  Pokedex
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
                 </a>
+
                 <a class="navbar-item">
-                  Jobs
+                    Documentation
                 </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-                <hr class="navbar-divider">
-                <a class="navbar-item">
-                  Report an issue
-                </a>
-              </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="pokedex.html">
+                            Pokedex
+                        </a>
+                        <a class="navbar-item">
+                            Jobs
+                        </a>
+                        <a class="navbar-item">
+                            Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Report an issue
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-      
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a class="button is-primary">
-                  <strong>Sign up</strong>
-                </a>
-                <a class="button is-light">
-                  Log in
-                </a>
-              </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Language</strong>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-      <footer class="footer">
+    </nav>
+
+    <div class="custom-table-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th><abbr title="Position in the dex">Ndex</abbr></th>
+                    <th>MS</th>
+                    <th><abbr title="Name of the pokemon">Pokemon</abbr></th>
+                    <th><abbr title="First type of the pokemon">Type</abbr></th>
+                    <th><abbr title="Second type of the pokemon">Type</abbr></th>
+                    <th><abbr title="Where to find the Pokemon">Location</abbr></th>
+                    <th><abbr title="How to evolve it">Evolve</abbr></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="has-text-centered is-vcentered">001</th>
+                    <td>
+                        <figure class="image is-96x96">
+                            <img src="https://archives.bulbagarden.net/media/upload/thumb/f/fb/0001Bulbasaur.png/70px-0001Bulbasaur.png"
+                                alt="">
+                        </figure>
+                    </td>
+                    <td class="has-text-centered is-vcentered">Bulbasaur</td>
+                    <td class="custom-grass-cell has-text-centered is-vcentered has-text-white has-text-weight-bold">
+                        Grass</td>
+                    <td class="custom-poison-cell has-text-centered is-vcentered has-text-white has-text-weight-bold">
+                        Poison</td>
+                    <td class="has-text-centered is-vcentered">?</td>
+                    <td class="has-text-centered is-vcentered">Level up (16)</td>
+                </tr>
+                <tr>
+                    <th class="has-text-centered is-vcentered">002</th>
+                    <td>
+                        <figure class="image is-96x96">
+                            <img src="https://archives.bulbagarden.net/media/upload/thumb/8/81/0002Ivysaur.png/140px-0002Ivysaur.png"
+                                alt="">
+                        </figure>
+                    </td>
+                    <td class="has-text-centered is-vcentered">Ivysaur</td>
+                    <td class="custom-grass-cell has-text-centered is-vcentered has-text-white has-text-weight-bold">
+                        Grass</td>
+                    <td class="custom-poison-cell has-text-centered is-vcentered has-text-white has-text-weight-bold">
+                        Poison</td>
+                    <td class="has-text-centered is-vcentered">?</td>
+                    <td class="has-text-centered is-vcentered">Level up (32)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
         <div class="content has-text-centered">
-          <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
+            <p>
+                I'm a footer
+            </p>
         </div>
-      </footer>
+    </footer>
 </body>
 
 <script src="script.js"></script>
