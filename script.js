@@ -19,3 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   
   });
+
+const searchInput = document.querySelector('.input');
+const tableRows = document.querySelectorAll('tbody tr');
+
+searchInput.addEventListener('input', function(event) {
+  const searchTerm = event.target.value.toLowerCase();
+
+  tableRows.forEach(function(row) {
+    const pokemonName = row.querySelector('td:nth-of-type(3)').textContent.toLowerCase();
+
+    if (pokemonName.includes(searchTerm)) {
+      row.style.display = '';
+    } else {
+      row.style.display = 'none';
+    }
+  });
+});
