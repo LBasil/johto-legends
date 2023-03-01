@@ -27,9 +27,11 @@ searchInput.addEventListener('input', function(event) {
   const searchTerm = event.target.value.toLowerCase();
 
   tableRows.forEach(function(row) {
-    const pokemonName = row.querySelector('td:nth-of-type(3)').textContent.toLowerCase();
+    const pokemonName = row.querySelector('td:nth-of-type(2)').textContent.toLowerCase();
+    const pokemonFirstType = row.querySelector('td:nth-of-type(3)').textContent.toLowerCase();
+    const pokemonSecondType = row.querySelector('td:nth-of-type(4)').textContent.toLowerCase();
 
-    if (pokemonName.includes(searchTerm)) {
+    if (pokemonName.includes(searchTerm) || pokemonFirstType.includes(searchTerm) || pokemonSecondType.includes(searchTerm) ) {
       row.style.display = '';
     } else {
       row.style.display = 'none';
